@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desso flowers</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/Desso.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🌸 Desso flowers</h1>
+            </div>
+
+            <nav class="nav desktop-nav">
+                <a href="#home">Дом</a>
+                <a href="#products">Продукты</a>
+                <a href="#about">О нас</a>
+                <a href="#contact">Контакт</a>
+            </nav>
+
+            <div class="header-controls">
+                <button class="theme-toggle" id="themeToggle">🌙</button>
+                <button class="search-toggle" id="searchToggle">🔍</button>
+                <button class="cart-toggle" id="cartToggle">
+                    🛒 <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="burger-menu" id="burgerMenu">☰</button>
+            </div>
+        </div>
+
+        <nav class="nav mobile-nav" id="mobileNav">
+            <a href="#home">Дом</a>
+            <a href="#products">Продукты</a>
+            <a href="#about">О нас</a>
+            <a href="#contact">Контакт</a>
+        </nav>
+
+        <div class="search-container" id="searchContainer">
+            <input type="text" id="searchInput" placeholder="Искать цветы...">
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Свежие цветы для любого случая</h2>
+            <p>Откройте для себя нашу прекрасную коллекцию цветов премиум-класса</p>
+            <button class="cta-button" onclick="document.getElementById('products').scrollIntoView()">
+                Оформить сейчас
+            </button>
+        </div>
+    </section>
+
+    <section class="filters-section">
+        <div class="container">
+            <h3>Фильтровать по категориям</h3>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="roses">Розы</button>
+                <button class="filter-btn" data-filter="tulips">Тюлпаны</button>
+                <button class="filter-btn" data-filter="lilies">Лилии</button>
+                <button class="filter-btn" data-filter="orchids">Орхидеи</button>
+                <button class="filter-btn" data-filter="sunflowers">Подсолнухи</button>
+                <button class="filter-btn" data-filter="mixed">Миксы</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section" id="products">
+        <div class="container">
+            <h2>Наши красивые цветы</h2>
+            <div class="products-grid" id="productsGrid">
+            </div>
+        </div>
+    </section>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Корзина покупок</h3>
+            <button class="close-cart" id="closeCart">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Всего: <span id="cartTotal">0</span> ₸</strong>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Отправить в Ватсап</button>
+        </div>
+    </div>
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section" id="about">
+                    <h4>Desso flowers</h4>
+                    <p>Ваш надежный цветочный магазин на все случаи жизни</p>
+                </div>
+                <div class="footer-section" id="contact">
+                    <h4>Контакты</h4>
+                    <p>+7 (700) 870-11-77</p>
+                    <p>г. Шымкент, ​Проспект Кунаева, 79. 1 этаж</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Подпишитесь на нас</h4>
+                    <a href="https://www.instagram.com/dessoflowers_shymkent"
+                        style="color: gray; text-decoration: none;" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
